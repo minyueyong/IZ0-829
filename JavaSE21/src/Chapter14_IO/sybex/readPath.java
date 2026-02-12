@@ -48,8 +48,8 @@ public class readPath {
 	         String line = null;
 	         while (( line = reader.readLine ( ) ) !=  null ){
 	        
-	              writer.write( line )
-	              writer.newLine( ) 
+	              writer.write( line );
+	              writer.newLine( ) ;
 
 	         }}}
 
@@ -60,6 +60,8 @@ public class readPath {
 		copyPathAsBytes ( Path.of ( "C:/Users/Yia/zoo-data.txt" ) ,Path.of ( "C:/Users/Yia/pathAsBytes.txt" ) );
 		copyPathAsLines( Path.of ( "C:/Users/Yia/zoo-data.txt" ) ,Path.of ( "C:/Users/Yia/pathAsLines.txt" ) );
 		readLazily( Path.of ( "C:/Users/Yia/zoo-data.txt" ));
+		copyPath( Path.of ( "C:/Users/Yia/zoo-data.txt" ) ,Path.of ( "C:/Users/Yia/buffered.txt" ) );
+
 		
 		
 		try (var s = Files.lines(Path.of("C:/Users/Yia/warn.txt"))) {
